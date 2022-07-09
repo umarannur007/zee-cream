@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zee Cream</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary py-3 d-none d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="">FAQs</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">Help</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">Support</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">ZEE</span>CREAM</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="product.html" class="nav-item nav-link">Product</a>
+                    </div>
+                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                        <img class="logo" src="./img/logo/logo.png" alt="">
+                    </a>
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGCBMVExcVExUXGBcYGR8cGRoaGRwcIxogHBsaHB8cICMcHysjHyEoIRkZJDUkKCwuMjIzGSE3PDcxOysxMi4BCwsLDw4PHRERHTEpISgzMzExPDQ5MzMxMTQxLjMxMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMTExMf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAEBQADBgIBBwj/xAA+EAACAQIFAgQEBAQFAwQDAAABAhEAAwQFEiExQVETImFxBjKBkSNCobEUUsHRFTNi4fAHgvEkcpKyNGPC/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAKREAAgICAgEDAwQDAAAAAAAAAAECEQMhEjFBEyJRBDJhcZGh8LHB4f/aAAwDAQACEQMRAD8A3+Ba+usXEVbJPkUEsUWORtuvp0mqPg63bS5cVDq1D5pnVpO370+y9ibazyNj7jY/tWRvYdsNiG8MgKX1weIbke0zUyfHZUd6NeMUs7SYMEjgH1qzEoSpjkgwfUik+EzJQqIPxNYMlN4JkwQN5onDYi3IYuVcjdWYiTxweII6U4zUuiQq09xUthlDGAHIMR/qg81fau6gdO28Sf6d/ektlFLPcvCFPWTxuN46f3micm1q724YIvyTvHG01PKml8gH4a0dP4pDNM8bDsBRNAXcYRdFuNzv9IM/rQdy9fOoPptrqAVx1mIWPUwJqroAvMsS9sCF1AsoAHO/J+kUWArCR1FQSYntvXeqmBl7N1Lb3UuqxQsCJ6ie3Uf2p9ly2/DBtABDJA6bmaV4/EacUBo16kAA7eYmTTHEYYvpIdljchTtEcff9qiPbACzbMLltlUW+SNLdJPOw3MUXg7ZDHYglQWYjdjJ47Ab89xQmXXyzeJdIhZRGkAHfdonrEf+aapdUuQDJgfrNUgAsyy4XAFUASfMx3I67T6il+Mw2GtNBYLdCjS0bSOsDaTG9Pi0MB3B/SP70tzzJhfdGmI2b1HO36/epmvK7AQ5FYe5ce6UA8Mg7SNUkk+hgfvTjFWlfEWWOzdV9AGIJ+sfegsWcQ11xZcJZTYsYAkchY532n3pYt+6uIZsOwuMRHm355AJI7VKfFdDSsfZ3hnDalXxE5FsAAawCNTHtFLMDlT3EY3kUOtrQixCjqCN5mmmQ5u10OLmldO56fv2jms5nFvFWsQ15rkB5UCZ29B2jiiTTV+ABcpvIbbkOov2zKq+6uvBXvPPXtT7J8xY6rSgrcuKzDeQkDgDvTDJMuw5/FRbbEna4Budt/Y8158S4OwLLSFVz8rDYz32/WlxaSaELbTsjBb9/WhUMFDEk9waJwucOgCiCskDV+UdBt6UnyjDYU7uJCKSSGMsR1psmBsXyngSgA3542g+9Z+57iMPwuIw7ay5UF/mk7H2pxaZSBpIj0rJYz4fcKxNwaVM8bkDfejMguqHVSh1uupX6aem33rWMqdNUI0te1zNeTWoHU1Jriak0AdzXlczUmgDqvCa5mvJpgezXtc1KAE2FVrR03HDpc3Dcef+X6gfoazvxIzPiIKEaYA67d6c3cRpK4d94hhcVZjSZ1R3nn3pPnGYeI5BA1oSvl6jo3se3TesMlKNIajZXfxWpNdhH0q2kXDCyQOAF4A7xTXKbD4i0rm4PET5YiRJ5b7GvMjthnDC26qV3UHyMy/m/vFV5Zlz4W7cxChnW6YNpeVljB9f6A0oaVsTWxxjwfDVbyFxADFCZ1cHjkUViLbIgCMYHIJ6ccmSKXYrOzbuRpkEbiQCp+lV5lnqshCiGOwB69+OlN5YJu2A0bDKwAkgg6tQ3j2P6UXpERsYoPIbASyIYuD5gT69K6zS3eIHhMq776u1aXqwC3eIoDOMUUQ6djqRZ7B2A/YmltvONLaLjqyxBZVOzdtua4zu/cm2sAi7dQq3bSQYIojNS6Guw/Lv/wAm7ydKIonf+Y8/arM0UGLamLlzaR0X8x+nH1FDZOxF3EH8uoCe5A/3rzDXfEL3A6K7eW1InSgPIB/m5+1PwDJlmEVWNhl1KFksy/PPboAO1NMNZVCwQAAAbDYdTS/FrctkXFuO5UjUnQgmOOhHP0oq9df8TQJb8vqdPH60JJCPcRhtd1HFxlFsEwPzT3PbavHN8XwVUG0VgmYg77x9qXnAXgCbTBX1AuJME6RIE8D0p2+rywQP5pEz7b7Uu3QGczzLLl28loeS0Bq2mCZkz6zV2BwKJcvBVlE0iCNRYgT19x96fXeKRZG5uO7q5g3GZ0I4HC+s7fpQ4q7H4Jl+SIjOxM6l06Y2XVuaNw2VfiG5ec3G/ICAFtj0Hf1NMkSBFehapJLSEZvG+PYF1zcC2w3lOkH5uwHUcUBZdcTaNm3bcvufFcASeTMd+PtWtxeFS4ulxqEgwe4Mipabb5Cu8Rt99ulS435AxdvIkUMtxjKaC6gAxqMEiD071sMtwq2l0KNhwepnvVKYL/1BuiIZNLD1B2P2qzF462gclh5BuO1KGNR6QBVxAwIIkEQaqt4VFIZVgqukeg7Vk8V8c20BgIx6HWP2FZ+/8cX2LaH56Kvy+ggT9ZrXh8hR9TmvJrAZX8T4zY3rTeH1bSNX6n+la7Kcd4ilpDQeR270NUDQxmpNczUmkB1NSuZqTQB7NSa8mpNAHs1K8mpQAP4YkHsCPUgx/asz8YABRes21DA6bjEQYOwk9d+PenLi4LgKwQBvHPPHrNV/EAH8OwuWyUlCyruYDLO/YRM+lTJWqHF0zj4PxgewA0BlPA9d/wC9Ob95Y2O/SNzWU+E7gS8bY6yPtuP0rQpOpzcKafygc+5P3pRehy7OcXg0Y76VUcbDdupM80pu5SwxKXFIKlwSdgBB3AFW3PEuI+pgUC/MV5PI0dwNt+tGWbpdrWtBBWQSCCrwNipHad6mWOMu0SMmvqOP0HaqsdbNy2yyQSNoMVVcvnV5LbtHJEAfqd/pQWMznyfgozvMaSDt6mPtVSlFaYC3F4Zhct4Uf5cBmJPMHf60D8QFkvW1R2dEOvc6o/0z/wA5rvMVxOoFklnmB1EVVi7BVwGOm4oGr6iuOWRwukVF7LcBir1y3cS3bJDtLsD0PI+w5rUMEUB9IBUAcbwOlVZHbHgKAIbk9DuZmu8ff0MEVXduwWR6S3ArrhpWwk9l9rFWy0BwSR3qnANJZxMMx/Ty7faaV5mNLF7oZTACMhnQYJj1nvUyXH39Yt3AgCqNx0/908z6UeorpkjnCE+LdBB30sJ9RH/80YKATGIXuMGEIAGIO07kj7EfeiLGIDiVn6gj671oB6zgBhPAn9D/AGoD4WtabC7bsSxPff8AtFd45oS88j5Su3oDA95J+9X5WAllPRF/ap8j8BhNdKRXCOKlq6rfKQfY0xAOeYk21UqwB1AkbSVHIFVZVnFq6XVNWoAHS4jp078UM99mxbW4lWABMTAiY9jP61zm63FvWzaUKdJUbTIHERxE1jKTW110Ohlax/lm4AhHKghv2r5T/wBRs/W5eZbM6FJBYEjWdpPttx9etPPifMbmDtXdfke+CBAAPYmeep+pr5vlOEbE3go+WZNbY3asaQ0yTKg6G7eOlOnrTCzivBcKiI5gMEKm02k8MuqQ3pMA961qWbSoEC7KIEUmzDBYQXrbXbxRzCqHG5B/KDyBJpyZtFD3C40MBP2NHfDAW3eYKR4bqWH+lljUPYgg/wDaaxXxXh3VzoM2xb1LDEFo5VSBu3ptTL4TxKvbt+ZnXXIZvm0m3cDKx6xtv2IrPlSsMkVWjX3cS95m8O4UtqDLAfp3pdhcxZWHh3Nag9+fvUw6aVdbTEA7wDz7VPh/LhcfUyQByeJ/3rLm2lXZzGrsPqUN3E13XirAgV7XSBKlSpFAyVKlSgDKZZnNpNAIRXJJbVA5PIM7/wC1P8PjbNwkK6ttvBms9fs/wtq2yWg91/IdR4JOw9N6b4ZEZ/Du2QJEqYBBAiRI4IrHG5V7u9AZP+FIuXACdnYD0EmP0itZluAXQGuaQzCBolRHT3Pr60mz3L0s3AbchbpMiSfMAOJ7j/61oAwNpHLlQANhG/pxNEYJSbZctpML1wwQLO0k9B2+tc4vFIuxPm6Ku7H2ApZczBncraI0gee4RsvoOhNdYPFWUQ3E1MJh35YnufSrcoryQW2rN1lh2KIJ2B85HZmGw+m/rXODwmggWRoVgCSQTJ9jvxTDC31dQymQ3FWnkU6T2AJ/Ct4ocvtpIiOpIM1i8zlsS4mTMfbatxjboS27k7KCx+gr59gLdy7fF0yqXG3PEif0rLM1STLh8m2xmIt20CiXuBQAqbt+nArlL19wCiC0piWuGT9FH9SKNwNu2oi2qhesd6pu2gJEeXlSZiTyDWuyQLHZO1xGJuM78oTAWf8A2jb60RhcutaNF23bLR2G8dd96Ks2IYMGgaYKjj3qjGM7MDaZNtiTv9BFTxV3QFB+H7RBMkM3JWBHsOKSZphnw8KpOn8pnY+hFNMfnJUhCrLvDNxE9p95qvO8muXVBs3Jbux8vvHf2qJpP7exUK7SXEsgeHqN110tPG/b/nNPcvxaqkXGIdZQyNtugI+lBY3D3AbNlSWZF1Bp32gb9BxXWY20Q2VuLv4gYkE7nrM+tZxUk3Xj9hjjAY5XSQDA5MHpzyN/pUt4C0fMg06mDEgkExv9vSi2uAbnpUV0aCCK6K+REt2FDMwA1NEnvAiuyu4O21LsyxrqqtZXxASJI3EEgSNO55nbpVSZqWum2q6ig8xEgKexmk2loDH/APWrDXXSzoTUoLRBEklSxgc7KhJPrSH4NS3bWdp0Aj1JJlvqAK+m5obTBLj7+HOldjLMCm468mvnWb4MObj2wFAMCNuNgB9qtTVNGuNWxubxg6eaw2e4m+10riLsgbpNsafYxuPfeqVz6/ZaG3jvRIzWze+dd6j1K3R240ose/BJtHDTc8ys7a1Y6grAxKz0I3py+Ct4cxaHkIJHprgk/oo+nrSv4PwgvXVtzCkyfUATt6wK+piygAAVdhA24Haoa5p+Ec31DSdIweEwjN+HZEFoM9h1JpxYxVyyfD1al6EDj3BrQtYhgyqs7ySP0oTFWrV0nUGVlETEfbv/AL0ljceuzmOMrzcXH0Rv3HT03prprOZm64e5a0qd5JPrtz+tG4bOJUll4O8H+hq1PdMBs0ASaUPir+g3Pw1Wdg0zExuaGzzHpctRbYhp4A3P14jfn0oPG4XEW8OBcurvACL1JO/mO5NVyvoAu9ndxSQUQx1k71Krwnw4NC6rxBjcCIH6V5S9wgi+/Jvg7tKLIOntsDz1o3COhUaLgMdzP770PmVxBbJFrxBBOtiBJ9J3NVZA9i7bVdMkSSDuJnn9an1PfxKoE+PX/wDSlo89twRHediPQ1xkWYXb1u1bVdGoEu3VR2+smis/w9wWmVgpt6hpMmQJmDPO9XfCaCHaOwiht8y19pd/hjF9MxZAHk/mPX1qCxocoLeoadoEQB0JPO/AppibulSZUdixgUpw2Y+JqOoL4Z3ZTsRPAB796JOKdeSErC8DiWfm2yAbeYda6x+KW2JJ3jZe9AXsbiBd0QpDHydNQG8TPNMjaJtsGABIIgbgbURm5JpdoKEOY4wPaUB/nPm3G3oR09qW5ZgPExATUfDC7wYIjt23iiM1e2Li+Ho0gLHQHruf60ZkdwveuXZVdQ/N9Bt6bDeufjKc/cy0tDvB4XQWAYlTBg7kGIO/WdqvPUEbfvQl7NbKCS4n0pbcz8v/AJNt2M7QpYfpt+tdXNInixy1vuZnYD+tdhAoHAgbVmcTj8XrCsotBwfO5UAR7EtO/pXGDw5vMUa65gEllG0DgyZ5qPWt0kFV2eY7A23vamxJIndDuB6D0pouaotxV1gppO8cEcD7UouYGwEQszQ/DzISBywHerXy7Dk2ShFwXDDnURq9YmRUKT20l4EGYLFIL1y47gTASe3/ACPvTF7Vi4VZijEcbihLSYFG8MLaDDuv9T1+tG3Mow55tJ9BH7VsvgHTL7t3SJ20xuf9hzXGYuFtO/ZD+1AYrJ7aoWts6Eb7MW49DS7NMTetW7vjXPwwjQ2lTO0DkESOTO21VbCgb4L+IEdXtuVXQZTT/JOmTBI+YN/tFM86zAhIs6GLTqIPSOdutY34WueI7XbVtjaGwN0AAiSHRIgQW94CRvTLG5mtnULVvU3RRuFn36f82qZKTja/6NRuVI7zLMbdrDeJceN5W2CJkSJ34isTiM+F0EWQyIIjUZJPUk9d68zbCNdJuX9TMzfKhEAevT6DiPtMsTw3LWxZthFJPinxCdjACiefcVnVLR2Y8agJMwtzu5k0++CPhZLga/e1+Ep0+TYk8k8HYD9xWeuYbEXDK2mM77KQN/Xit9/0+xNy3Za1iVcp+UqCdM8zGxE96ai2tCyy+B0r27TqcMkW0TymCWLsSGM8/LpH/ijf8SvLaDEMJ/Kd2InpvNDZQhC6jeXwvEldI3DSRHH6b1bnNx20TuVJKnSASDtO1Z82r5PZydvYyyjNAZDBy3U9h6z2ppbxSP8ALuV3Ejoeo71jMTmOl4EgtsY4Hv70/wAtuXFR9VttklRO/qJ6TzWmPJboTQs+LcVbVS9w3A8/hr/MJEkDpFKsVdvK6m61wJBI8oBJPfjbijc4yyPxcQ7edvIvzRG8H+wpnGo6cQW06QwJA46ieg33pT31pgJMPiiw8mpSwgmOh2MUyv21vW7Vp3YOjbNA+WIMxQ+fCx4Xh4fUF1BiwPB6RNVYa25IJJ8o3PG8b8VmpOL1sKNZaybDgAaBt6mpWdbMRP8AmL/8xUrX1ohTAsLjrd2+EsOYZAug2zwBvG+kH1rnBP4N1rYP4c+foyn7Qa1WXYW0qrcS3ocoACdyBA2JH0+1c4LBG2lxy2p7ra22ETEQPSB3pKHTKsAxmbfhXEa4tyY0wN4J3mO1X/C1wa2AP5f60Vl+BsgMw4uD/gpLhn8O4wtNBBI4+lQ+UZJsa3aNPicbbQhXIHXfpQ9trFyQgUqxGorzPTikbs1oTiUBS5z55JK7gnbYnsKt+FXR3MRHIH1427U3luSi/P7k0aN8OpdXI8wmD26VXmt3w7LuWjSpMn2oDPMa1s7al8piIMnaJnp61nMyxzXLPhnUVI825MxyST+1OeWEW4+QSFgx4uMgtoXc8W1E9K1GAyq7oDXyV2P4SEHngExz7fegvhnCPbVbiKomVEjcgSdo36fpR1/ObkzClRyIJg/T+tZY1Fbd7KlLwgrKcuw2gutrzb/5nmIj3JjiirPjtbQqyo3JGnaDwPtQGXXGdbqpae1cbcM24IPX252pvZYi2PlmOnE/710RVr+ohtlWLtWWAa8Pk6t/zcdahwqhWYQurmCRI6T968witetAX1gydSwR19ekVZj8ELiaG+UDbciIPB77U68pCM5mWEtWgiK5Nzop4aesgVVa+H79q4tyzcBBMkqJgc8fmkdqdLkVmS4DOY8oJ2UdhP8AwUVlOHdLYBlR/KW1FfSeIrFYVfVfoMW5ggd1uW18QEFbqrtJ/LIO43orA424/wCG1hk07TMgQPufpROLxDopNq3LDcgg+b2I6+9BYfOxpD+G/nYqABJkc78fT0rVtRdtiOcXILBL2u4VMpyAD1jpHc0izjNbdwAXdN3QZAI8oPEgdfrNOc9tBLdy8dSsw0quw5Ebxz1NfJc0zli2hB1CrHU8UlcbZvigpbfRpMZnLttwo4AEClpxwncKB7VwmW3xbD33W2GB0CJZ43gAlQD7wO5FW5Pkxu61u2zAgozswEyIRlCBW1ejHafemnOWjdzxR6FGNzSxcfi7d0ndFfQv1I3HsCKZWsffIPg27dpSfKoE6eBydyT1NazKsmw+rS6qCvCW7TBAFnglY67kHeAN65vWyjyyC1YB+ZGYMw5J8pltug43O3NP029JkL6hfBl8S1+yUa/cZrt3/KQqxU9TqG3sFnkitTi86a0i24IY2tShoCgkToYCCx334EUpzPEWGxFu5/ELdtIrXrWlQGQqdOlo32LAiROx+pWT4i/da7cu2kF0KdLESoBMKgb1ienAPBFXTi+KMJy5e5l637LWifOFuNqMLz5Jgao3mdhPmXkAmtXZx1gWQIbR4YiVMnbjfefesVhcNpUvcDLadtLWmQ6tWqITrBIIkcwNA60bfOIt29RAN9x+EpH5B+TykgHTvwANgY3NS0q13/ol9jDD4+1pZXSOCk9AD3/rTy9m1lk5OlhBK7Ef2rOJl11bWrGO7M+0QoVBt1nV9PU13bw902T4JGh2ggbQBxuelcycoaW9DpD25iMKUVH3QbgseD9d5oHNr1plCYdl17AkzJUngd+ZoPC4C5b0F7ltwXAjkifQ80/fKl5Q6GjfTtJG435A7xVxcpLpC6Mj8WG3ahLbsWXZieh52oPL8w2Ks0GJ1GevHvU+IcIjXUZAxZWJu2yTAg8SdyP6UVmmGvyLui2A8MoTgDaBFZSptuygv+Gwp38+/wDpH9qlXWs62GvC2tXX/mmpS9SPyv2EOM0XGBdVu4pggaVt7kdeSYoDGWb7eHct37qozRdRkEqv5jsBMHafWtPrK7R7ep7f70JmGsKSx0id9MklY+Ubcz1rrkmtiTALlm9aAS03iW3GwI3XbnUDEVncPc0Fww8wOxmZ9adYHMmtgqlkm2Pyq2rR3En9qBz7EE3bZ8OEuWtQI6QeG6DkRXPNqfTKit7Bc3y6xiVteJcZHEliJIb+1NcAbOGuxh11hlE7ny+pnv8A0pVihAnoYAj12rkYu7af5/OF0xA+X/UOvPNYqaTuuiWxxiLSYhyqnxHHzMzQB1hQNo3rN4h7iYllVtl2KzI9frTDFZxatrC2jb8UwSsAztLDoaU2bmm4SvE9Y39azzyj2u2NI0OWW1OH04gwiXJX12G0dt6Y5NZtPdu6X1To8okBRB2A/WaCw2bqiMIV9G6FgQST2EV5/G3LdxLjG2pYhWt7BmVtg23Y/oTXVilFRW7oOJp7lt58r8DgiZ+0VWLuiPFILHjSpJ+iiT9aGw2Ju3SQq+Gsb3OSfRZET670ysWVTjk8k7k+5O5rqTvaJ6AbuPcvpRNO6+a55ZBmdI6kdtuaNMRJMn7/AKVawBEESKHGBt76V0zzpJX9qewL1NcXLqj5mA+tefw46lj7sa7Syo4UD6UxFRxHa25HeAP/ALEGuPLIJtsI3nTO/wBJoyK8O1IDGf8AUjHRaVAeZP8AT+9fOsiyVr103BbLraIEatMswJ5G8gRt/qHbd/8AH+Ya7zGdhsKu+GXNrCgBQWuW3cxA1apIBMbHToG/QVm3cjra4Yvyx3jhYSwA66wNvMGcjnSDO/8AM259KEwILW9Ni34ixxbbRpEkT5+pIKgT+Vu1DZBi/wAK4fCuTIGh3kCB+XUYWQ3fpSTM8Zrvtpu2lYHTpDXEKFdY0+Vt/MOgnY963jON21o5VF0OMReW1dtW2W7qYjVbDKd5gKzM5AAnUY3OoclYqjPP4m6BcdLZttcKWkE603EGTsTKydxOw2ojEYSwHu4lYa4jNcUagNbLrYSxHlGqOm21LcJn5a5btsqKisY/GDR88kKLcz5SYrOM4tNvXkbT8C3L8rD3FuKLd2LYuPr2LAmNLmCplZDGDOs+9aZMwtWsMpsoxRnImDp1mZZ9TEhVIjR02HAMIMmyVt/4e4sax5JghB5fGWSJVCzAp1GrrBo3Nr6XltWrLgpdAKgyAyknUfKGKserEafO3eotqS33/BVWWXs2uW2Fi05u3dUu7CQZG7MOicnaJG4iABtcowzeAHUjzAlQWJ0qT5YMkb7kGOoFZK+74q6Et2SoUBLcEmNIUhSB5Y3mZBGn61u8vy8i42qSgUKs9Y7egrOLl1Wv7sckqslxUa0Vvi4B3YAxHqkgUpxeXNcuqlp4sqBHmgesDqf71qvD2I596Rrk9q4vkc6lchn3kkcxPbvVzhdEFmPyu3eUMjafXnjp3pDczEEhbYa0beoFiSdTAenJ2/Wj8qtaHAa4xYsyBCu0Tyf3mj2xdq24sFYgSWYwOOkcn3iskova032NoQXLKsmtSbjs4CtpjUYllPWtUlhGtK1xFHlBIIG23rxXOEFm4pFuNmB2EGdt6LxCsRAAYHZg3aKuEKTYjLXsqMnTpK9POtSqsZAcjwVWNo22gR2qVyVjLoe4IXAzudSlioKuQwEc6DttH61MHmgvXCiyoQnePnjnngfvQWJxa3yha5oCEP5d9WncgzxxRYzFGtq9lBruHSNo9/fitVk3Slr+WSwDJMSbetBblPEJYgkxM7+21B/ElwOToLOqx8o8ttT/ADHuSD7RRVzSmLRVA3UC4FPlYsCIjpHNNP8ADVWzcRAy6pJ3B6RHt/enBScXFPoPJjP8NDMjEsdJkLqMA9DFML+XF7xNzECBbA1FOh3I9xvz3q+wsCvcyaESbZfxXW2IIEMeOTxtUTg+OipR+ADP8v8AEDNZUaE06D6RBPoanwzlXjMQTAUCduZMf3q3HWbllAC5huVB4jivchuvb1OHCqT8xiCPrWME+SU13scVSbHeY/DyEKLcqBAO87d9+aCwmQWmOhSSEBV3/maQYX2HP09aGOeXr+q3hyXB2a6FMDpCRtJ79KaYXDX2ARFXD2x2gt6/U8yT1rrUYt6QkmkNMVjFSERdTx5VGw+p6CrcHbYCXbUx5jgegHahckywWtfJkwCxBJA6mO/NM9NdEbe2Q68Hte1yK9qhENcoTG4APoZ/pXdSmB5Sz4lxfh2WPU7CjzdUGCQCelZv/qG8W092/YVMpUiscbkkfKviO/8ANRvwurXxadFVhbTw7ug6bqQrW9SkddHmB9aRZ7ckmjfgK9dRn0sVRQWuGCREoo43mWgc/Nwaxizrzb0McTmVxVJs3MYVRgdVy2hYatiG2htJQb8+fmjMPatX1N5rYbSFa4flYliVZtJUxDh+CKIwuFdLj4zDkOjI2sPadHILAMIABkvbEEjr2G6fGY3EDzWi4LM1s2wLclSdUFX1Bl3InYnbYVtySdyXZyva0y6/fLYh8O4Vg5e1Bugk6vFCwNIgtK8nrztvVZyh7NxGuYJrRYuqO922Rra3dKg6JMElh/3e1E5ReR/De9ZfxVIBYrElWBVoQwIQAf8Ab67oRhry3kBBBW4GBYXisghlI1XCp49txWUKVlbY9sobkXVkuVZhaXcg+YBbYCy6+a4RpMxcIIMTTL4ZypiUuXGKuJ8rMQAZ1QZAg/KOAeQaXYuEUAdKL+F79+5eFsXGZSd1c6gRxALSV+kU1O5b2bTwOMbTPo3w1g9FssYlmJ6dCR05nff2pzVdq2FUKOAAB7Cuga1Wjkbs6qspsQNpnj1613XtFWABh8KU0KGJVVIJIBYnbr25pZjMOSRhwDqPnN3/AEz+bqT0j2rQ1IqHjQ7EdnJmty1u6wJIkwDtHai0tXm0hzBRgdQMC4OoK9KYxXgoUEugsrIH8v6CpXcVKqgPn5tFVj5i08fsaYYSw3g+GSFQfp3jtQjZxbLaY+XeYozDYy27qz6SDtEbD6V52OEIvQxpgx+KpFoTAAYDYATuPvTwihMLdthZ1jb229K8bM7PGqfaa7otJbYmZ50hiOzEfrSj4qOm5gn7XwP/AJAgH7kU4xrqbjEHbVIoHPEtNbRrpEI0gdyNx9qxfk17QRmtwOPEvkBVHHE+lLbmT3MWVZ1i0hBW1xIHGr+1IlxlzG3wu/hId/WK1X8VctwVueXght4Hf0qOSbsJe01eHRhb2CrtsBuB7cUK+KVQXU78en2NI80zjEAbRt/LQeDxzXZZ5kdIrWU9aMrNbZzEkSRH9apx2baLesqZnYRz9RWTfMrm4bZAdj9aY2M0nyc9e9Yr6p8qaHaG+EzDxPNpgdSSQVP24pzZcESCD6isy92eo36VLN8p8pI9q1Wan0JuzTLcBJAIkcjtVlZgYh9eud45B/SjkzoAfiAiOTWscqfYhliLWrTEbEHjtWR/6nlhbtkceYH38v8AY1osBm9u62lZB6T1q7NsDbvWmt3B5T16g9x605LknRUJcZJs/PmJtF3gCSTX2D4G+GRhsKwdVN24AWBExG6qfrufX2oPKcpwOFul4uXXUyGYDSvqAOo7mnuAzm3fdljyjqN5juelYRlFPvZrlyqWkY5S9i0SpuXfFO4gbARsdWkjkAbHg0Fi8uwviaybi3L2ptiCfxRpK8sIC3G+xiNqMz/L2d2s21uFNWpSrgFhPCywlQCSePl60uxGZmytu2qMdM+a4wUSruhEQ0wUJn2ro5NpfgzrdiTCY17Ja1du2lS5AuAlY5jUDbtK4IiZ1RswPenOWqgt6R+UkbEwo1MYAPEsSTvyKJy3KLN7U9u3a1m34p1SQdQbUF06TAYuN++9dNp1wABJ1NHGo7t9zJ+tLJGS9z8mmCpTr4EucuZp38LuLEca2MHUJCjaDI+Vgd99iKW5gi+KoPEimuXG8zDxLZuWnaUMo6ENJUjyCPL6yCxE7VlF1s6c70kfULLSoMgyBuK9tNI3BHof9qzuXY82gVK6lG8A7idxMmn2DxK3EDjgifat07OBl9SqFxVszDrt6iuVxtomA6kj1p2hBM17Ncg1XiASpCmD37d/0oAtmvJrwVyKYHc1K8qUCPjOGzUtsVjbzetMkxQ0gqBPMdaR4Zyq+Ye9EZPb1M4UwD8s968yUV4LRqMLjS3IKg9O9WnEiQAeTE/0NLrNtgATDED2ivWzS2sSFHeoU/AhZ8f4u4ptJbMb6jHp0obHYxrtrUeu0f0qfElk3riPbMqBBpjlWXgQG3EzFat3FHTj6GmWYa3asLG0joOpobE3gQEUzqIn0AMmmtzFKgUQDPSqTg0aGVdJO8U4TivazHI/cX2EYjYD2mpewwQSRp7kUPbxLKdLJpnadoPpXuZ32KaSpI69Papnmd0kZmcx1k3bihW4cD+v9Ke4fDm35y0ACPrSjLLZW+WgkAFgJ27GPvRwxZcyA2/pI9PpWCdvYxp/EGAfL7967Uj+f9OKR5s9xrYW2NupAiqMBi8Qz6WVtI6mIMetWm10FGksuASjNv09apxjtEKBPSTVGAfxPn0yOOp+9WZpgxcTckEGQRW8Gnslo9wOK3Ekax2pjdzS5oIExxvSHD4YBvmM+o5oy2NRgfvTcr0ITZkuJa4IkA9R+1MstxPh3GBOnUo/7tt6IXDCfNcaR0rq9l4La1JmODSlXfwtILAsXhhcRnaVuANbRgxWVcMBBBlSAW3rLZJaw4W6uoOPmhVJhhGqdYcmSSYHQdN50uLxGnz20LXFBBGrSkDzEtMjbc8ek1QuGVrINmFl9Er8w1Kr22XiPNpBgfaK6MEZvGlXjo05JCnDfxNtCcPdRGVmBZkCKtsk7jy6ILgEn/8AaTCyBVmHvaV1Egnvtv67bULlmAu3dSeEVW4jI7u2p4KwpJMmAy2mMnkH0oPMMTpRV2BiSBAH0jaKKqO3s6cH3M5vYhrl0Kp3J55j1j05rVYTFXLVhFvNbABMFBt0cRpDady0zAhd6wuR32/ibbAT5+BvI3n9Jppbx2It3WKm+zWyQwFu2urSSpBhYg+Ge/8Ameogio1T7Fnk3L8GusFNZuIwB38RJkqoliQZgLJBg8ANFGviHK6bfB9dqF/ibkqBaOh1jSDAPnQh14hgviGAOQN964tZhYvWNVtivhBVuLBDJsI2O8EQJ9N96Rzy+S83TbA1c9SavsYpWBZdm7j96BuYwXAAi6lG0kbUG2BdHDjgnoelLVkG4x2erbRNJDGBP/gUOM9cyrhTI8pU9xwazOZX1WDA9CQTVK4ptpAX1HFacmxm5ym6vhImolgCTJmN6Y2MQjCQQZ9awZxV3RCE6jG46ir8PmdxSylQVjqNgfSiM/kRrWziwNmcAjkGNq8rI/4kp5n7VKrkBhP4+0tuDOo9RwaOw+J8IqRw3XsDWcwVoCdcTMgTUxuPkaRXI4W6KNFmmYmJRyy8SOJrOYzNADADb8maHW3cdQFJjos813l+T3LjDTbdoO4UU444x7A2fwE5e0//ALgBPtWke35t127zzQnw3hVt2p06ZYbew5phfEATyTSe42a42A5jgbj3kctotKkTIBmfXpFLvivP3sWi1gpoiA53lukd66zjGOuIdFCvpQHQdp279OaR4PHpc8Vb6W1tWjGh5I1GYEd96zUbd0ZTfuYvtfE2NFpLrPbKSPKQJbfmOTWyyzNFxOHLgkNwwmON/tWHfJrd+8zW7lq3bnSACWAKj9jWp+G7Hh2WttbClCQZOzz+YHoCKWVqtEoIyh0V2DFjIMiD36H1ovD3DaRn3KgxBM/8FLsFillraGT2QSUjg1zZu60bW7HR107D3mudKrYxxjdNy2TaYIwGqBt670mweds93w2UCBJ/aiM4xDJhlFhiRcHzbGN42pFjsNbUCHPikgkkHiOK6OMWkNGjbDurakMA8D+We39qcYBbhXzkNNZr4czMCVKs7Acbmic7zRrYS4JWeUMT9B2rNWmNmnw9gAeYzHHpVq4WDOn6istlnxNrAuC3cCEkeYDkc7Dp/ar8x+NEt6WYMFjeBE/eruQjRvZAM81VfHlMc0LgM6t3LaXF21gGG2O/fejjcBnSRtz6U1IWjJYnAXGV2IJJ3KltIKyVbUYIgqzAiN6XZxirdu3aNi54S6dEIodpDflYruPNAgbR2rS4zMrXipZPm8SQyTGwUmJ9Yj60lzqzbsXFs2zatgpIRtTEkltJhWXZW0kbTGoV2wlJxTTKVdMKN44mylwF7Sbhio1R8ysCCPLuJBA2iRvWHzW4WuMZnen2YASbLXbWKe2dTeEQiIGKoyuoMOVZVhjJ/FIrN4jk+9E48dHT9Pu2BC5pdfMVM8hdR44Ag9+xr6Dh3sutp3xOItM6BiiWFJBXyFi629yWtljPfoIrFZTaJu6tCsBG5Py7ruBEE+Yc9JrYZ3lb3PDNtLd1fDglgdoZwQIUBYDHYAHftTxy4yujLLuVEuviClu54d65NsaiLpVdSAqRpLALPhIdxH4vqad4d3bD6wAhAKs91Q7HTI82kgMGCgzz5xxFAfDr3bNk2zZ0hmLQu4giymqTB+Z49kJrm/iHBtOz3+SNVtlIUJ4YAuWwzAmXLbgGV4ECnabbrTIoZYbSto+GAFkHb15pcM0TUySdm2p5j0RwLlswjqP7gkdNiNvSsxdwyWnLtDCdyf6Vikk9kUMcX5kLuQP5RtUzG/bK2wIBjgdoFKcwxNm5wDB4M8fSuHRW2tg8eYk1SWwH1rFjSAJGkQOlUPmqkHfedh3pLjL5ACLvsBS/4m8rrpG/WDzFVxFQ5uZtck7N9q8pBbzC2AJttPXzV5TodHi4ISFBjnf2rv8AweVnVuD2qVK5rYDDIPh4k6mYBZ53n22p/mOdNhEJVBGrTtALGJ3qVKy5NtC8nfw7f8W2LsfMSSJ9fWtFZtyAeT61KlbLo2j0fN/i61buY67qdhoAJieoAA/Ss1nlnwL4DksNmYTMz+5ipUoS2Yv7g7CZijylq0AhU6pjnow7EU0yW5cWyQTywBLeYHqG7yJ4qVKwz66Ghvg8qTxjpdg+2/HHaP2qlMIFuNrJ0kxsT12n6VKlcXOQDHG4AratBWHlbcwfMI534NJluutwp4akMpIkzx1mpUrriNBGWlVZDBBuwCAeG70t+L8XefECzbVYXyy0b96lStYJchni4HHOLdu24RQYMNAMncxS/OsgvWy3jEwNw2oNPp3rypW3SE+g34OA8NtZYMjATOrncR2gVv8AJ80tXdVuCGjfbnpMipUrlydsRmPiDDKmY2GKjRBkd4DbfWQKHzX4sYlbzWbJcnSIa4dKgAw0qsmTOxI9usqV24N4tlF+V4Bls/xGsy5JhfICr2i8aUgSCQZMkzHSsviDzUqVtnS1+ht9K37v1KbYXyDwlZvMW1nbc6QBAO3l367mvpfwpfFlLRdQv+YYQDrccDt0AqVK0+lipOn8MwzyYJ8RuzCy2jWPN5i5Gkm5bERyflJ56dZqnJ2YhLeprM3G/wAyL86bVk6dyY5iQRuJqVKpJeu1+X/gS+xGht3tbXLYYEBVIUKQUJVTyTB6/fmk2Jy61cLTqJA3EkA/71KlcGfUtfkPgHtZeoUCJAO08+oNV4jAr4mlDpIAMdD6VKlYxm7A8tZS+sM7Ab7gCdv71M5yBXYEO267HbnuR617UpZMs09MYmb4dj5n36wP969qVKPWn8gf/9k=" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Traditional & Delicious</h4>
+                            <h1 class="display-3 text-white mb-md-4">Traditional Ice Cream Since 1950</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 home-btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Traditional & Delicious</h4>
+                            <h1 class="display-3 text-white mb-md-4">Made From Our Own Organic Milk</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-secondary px-0" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n1"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-secondary px-0" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n1"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <h1 class="section-title position-relative text-center mb-5">Traditional & Delicious Ice Cream Since 1950</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 py-5">
+                    <h4 class="font-weight-bold mb-3">About Us</h4>
+                    <h5 class="text-muted mb-3">Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed vero dolor sea</h5>
+                    <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut. Labor diam sed ipsum et eirmod</p>
+                    <a href="" class="btn btn-secondary mt-2">Learn More</a>
+                </div>
+                <div class="col-lg-7" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <img class="position-absolute w-100 h-100" src="https://post.healthline.com/wp-content/uploads/2020/11/ice-cream-cone-732x549-thumbnail.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 py-5">
+                    <h4 class="font-weight-bold mb-3">Our Features</h4>
+                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Eos kasd eos dolor</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Eos kasd eos dolor</h5>
+                    <h5 class="text-muted mb-3"><i class="fa fa-check text-secondary mr-3"></i>Eos kasd eos dolor</h5>
+                    <a href="" class="btn btn-primary mt-2">Learn More</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Promotion Start -->
+    <div class="container-fluid my-5 py-5 px-0">
+        <div class="row bg-primary m-0">
+            <div class="col-md-6 px-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="img/promotion.jpg" style="object-fit: cover;">
+                    <button type="button" class="btn-play" data-toggle="modal"
+                        data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 py-5 py-md-0 px-0">
+                <div class="h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                    <div class="d-flex align-items-center justify-content-center bg-white rounded-circle mb-4"
+                        style="width: 100px; height: 100px;">
+                        <h3 class="font-weight-bold text-secondary mb-0">$199</h3>
+                    </div>
+                    <h3 class="font-weight-bold text-white mt-3 mb-4">Chocolate Ice Cream</h3>
+                    <p class="text-white mb-4">Lorem justo clita dolor ipsum ut sed eos, ipsum et dolor kasd sit ea
+                        justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum</p>
+                    <a href="" class="btn btn-secondary py-3 px-5 mt-2">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Promotion End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative mb-5">Best Services We Provide For Our Clients</h1>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel service-carousel">
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-1.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Quality Maintain</h5>
+                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
+                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-2.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Individual Approach</h5>
+                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
+                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-3.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Celebration Ice Cream</h5>
+                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
+                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-img mx-auto">
+                                <img class="rounded-circle w-100 h-100 bg-light p-3" src="img/service-4.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded p-4 pb-5" style="margin-top: -75px;">
+                                <h5 class="font-weight-semi-bold mt-5 mb-3 pt-5">Delivery To Any Point</h5>
+                                <p>Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo</p>
+                                <a href="" class="border-bottom border-secondary text-decoration-none text-secondary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid my-5 py-5 px-0">
+        <div class="row justify-content-center m-0">
+            <div class="col-lg-5">
+                <h1 class="section-title position-relative text-center mb-5">Delicious Ice Cream Made From Our Very Own Organic Milk</h1>
+            </div>
+        </div>
+        <div class="row m-0 portfolio-container">
+            <div class="col-lg-4 col-md-6 p-0 portfolio-item">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                    <a class="portfolio-btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">
+                        <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-0 portfolio-item">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                    <a class="portfolio-btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">
+                        <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-0 portfolio-item">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                    <a class="portfolio-btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">
+                        <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-0 portfolio-item">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                    <a class="portfolio-btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">
+                        <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-0 portfolio-item">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                    <a class="portfolio-btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">
+                        <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 p-0 portfolio-item">
+                <div class="position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                    <a class="portfolio-btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">
+                        <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative mb-5">Best Prices We Offer For Ice Cream Lovers</h1>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel product-carousel">
+                        <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                            <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                            </div>
+                            <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                                <img class="rounded-circle w-100 h-100" src="img/product-1.jpg" style="object-fit: cover;">
+                            </div>
+                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+                        </div>
+                        <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                            <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                            </div>
+                            <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                                <img class="rounded-circle w-100 h-100" src="img/product-2.jpg" style="object-fit: cover;">
+                            </div>
+                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+                        </div>
+                        <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                            <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                            </div>
+                            <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                                <img class="rounded-circle w-100 h-100" src="img/product-3.jpg" style="object-fit: cover;">
+                            </div>
+                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+                        </div>
+                        <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                            <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                            </div>
+                            <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                                <img class="rounded-circle w-100 h-100" src="img/product-4.jpg" style="object-fit: cover;">
+                            </div>
+                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+                        </div>
+                        <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
+                            <div class="bg-primary mt-n5 py-3" style="width: 80px;">
+                                <h4 class="font-weight-bold text-white mb-0">$99</h4>
+                            </div>
+                            <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
+                                <img class="rounded-circle w-100 h-100" src="img/product-5.jpg" style="object-fit: cover;">
+                            </div>
+                            <h5 class="font-weight-bold mb-4">Vanilla Ice Cream</h5>
+                            <a href="" class="btn btn-sm btn-secondary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative mb-5">Experienced & Most Famous Ice Cream Chefs</h1>
+                </div>
+                <div class="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0"></div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel team-carousel">
+                        <div class="team-item">
+                            <div class="team-img mx-auto">
+                                <img class="rounded-circle w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded px-4 py-5" style="margin-top: -100px;">
+                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
+                                <h6 class="text-uppercase text-muted mb-4">Designation</h6>
+                                <div class="d-flex justify-content-center pt-1">
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-img mx-auto">
+                                <img class="rounded-circle w-100 h-100" src="img/team-2.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded px-4 py-5" style="margin-top: -100px;">
+                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
+                                <h6 class="text-uppercase text-muted mb-4">Designation</h6>
+                                <div class="d-flex justify-content-center pt-1">
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-img mx-auto">
+                                <img class="rounded-circle w-100 h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded px-4 py-5" style="margin-top: -100px;">
+                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
+                                <h6 class="text-uppercase text-muted mb-4">Designation</h6>
+                                <div class="d-flex justify-content-center pt-1">
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-img mx-auto">
+                                <img class="rounded-circle w-100 h-100" src="img/team-4.jpg" style="object-fit: cover;">
+                            </div>
+                            <div class="position-relative text-center bg-light rounded px-4 py-5" style="margin-top: -100px;">
+                                <h3 class="font-weight-bold mt-5 mb-3 pt-5">Full Name</h3>
+                                <h6 class="text-uppercase text-muted mb-4">Designation</h6>
+                                <div class="d-flex justify-content-center pt-1">
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="section-title position-relative text-center mb-5">Clients Say About Our Famous Ice Cream</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-1.jpg" alt="">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-2.jpg" alt="">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</h4>
+                            <img class="img-fluid mx-auto mb-3" src="img/testimonial-3.jpg" alt="">
+                            <h5 class="font-weight-bold m-0">Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <a href="index.html" class="navbar-brand m-0">
+                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+                    </a>
+                </div>
+                <div class="col-12 mb-4">
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-secondary btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-12 mt-2 mb-4">
+                    <div class="row">
+                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
+                            <h5 class="font-weight-bold mb-2">Get In Touch</h5>
+                            <p class="mb-2">123 Street, New York, USA</p>
+                            <p class="mb-0">+012 345 67890</p>
+                        </div>
+                        <div class="col-sm-6 text-center text-sm-left">
+                            <h5 class="font-weight-bold mb-2">Opening Hours</h5>
+                            <p class="mb-2">Mon – Sat, 8AM – 5PM</p>
+                            <p class="mb-0">Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="m-0">&copy; <a href="#">Domain</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

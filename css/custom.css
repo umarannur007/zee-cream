@@ -1,0 +1,16 @@
+.nav-bar::before {
+    background: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+    color: blue;
+}
+
+.home-btn{
+    background-color: blue;
+    border: 0;
+}
+
+.logo{
+    width: 80px;
+}
